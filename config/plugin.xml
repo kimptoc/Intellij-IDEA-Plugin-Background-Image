@@ -1,0 +1,26 @@
+<idea-plugin url="http://www.intellij.org/twiki/bin/view/Main/BackgroundImage">
+    <name>BackgroundImage</name>
+	<category>Editor</category>
+    <description>Plugin that loads a background image into editors</description>
+    <version>0.9.1</version>
+    <vendor email="backgroundimage@decroes.com" logo="/images/lil_nemo.png">Eric Sheffer/Charles DeCroes</vendor>
+	<idea-version since-build="99.18" until-build="103.999"/>
+	<depends>com.intellij.modules.lang</depends>
+    <change-notes><![CDATA[
+                <ul>
+                 <li>Added logo for IDEA start screen
+                </ul>
+                   ]]>
+    </change-notes>
+    <application-components>
+        <component>
+            <implementation-class>org.intellij.plugins.backgroundimage.BackgroundImagePlugin</implementation-class>
+            <interface-class>org.intellij.plugins.backgroundimage.BackgroundImagePlugin</interface-class>
+        </component>
+        <component>
+            <implementation-class>org.intellij.plugins.backgroundimage.BackgroundImageConfiguration</implementation-class>
+            <interface-class>org.intellij.plugins.backgroundimage.BackgroundImageConfiguration</interface-class>
+            <option name="workspace" value="true"/>
+        </component>
+    </application-components>
+</idea-plugin>
