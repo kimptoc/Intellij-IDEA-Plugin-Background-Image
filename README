@@ -1,3 +1,14 @@
 This is a plugin for Intellij IDEA, it lets you change the background for your editor window to any of a random set of images that the user supplies.
 
-Here is the list in the Intellij IDEA plugin repository.
+Here is the entry for this plugin in the Intellij IDEA plugin repository.
+
+- http://plugins.intellij.net/plugin/?idea_ce&id=72
+
+NOTE:
+Works on Mac OSX - but only seems to handle gif files (png and jpg dont show the code on top of the image :( )
+
+
+BACKGROUND:
+Info on making a plugin work with the whole family of IDEA editors:
+
+- http://confluence.jetbrains.net/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
