@@ -25,6 +25,10 @@
        <fileset file="build.xml" />
     </copy>
 
+    <copy todir="${build.path}/images">
+       <fileset dir="${project.path}/src/images"/>
+    </copy>
+
     <javac srcdir="${project.path}/src" destdir="${project.path}/classes" >
         <classpath path="${idea.path}/lib/openapi.jar"/>
         <classpath path="${idea.path}/lib/jdom.jar"/>
