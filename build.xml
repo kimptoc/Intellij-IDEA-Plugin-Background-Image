@@ -1,23 +1,42 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<project name="deploy" default="jar_plugin" basedir="..">
+<project name="deploy" default="jar_plugin" basedir=".">
   <property name="plugname" value="BackgroundImage"/>
-  <property name="project.path" value="bgimage2a"/>
+  <property name="project.path" value="."/>
   <property name="build.path" value="${project.path}/build"/>
 
+  <property name="idea.path" value="/Applications/IntelliJ IDEA 10.app"/>
+
+  <target name="clean">
+    <delete dir="${build.path}"/>
+    <delete dir="${project.path}/classes"/>
+  </target>
+
   <target name="jar_plugin">
+
+    <mkdir dir="${build.path}"/>
+    <mkdir dir="${project.path}/classes"/>
 
     <delete includeEmptyDirs="true" failonerror="false">
       <fileset dir="${build.path}/org" />
     </delete>
 
-    <mkdir dir="${build.path}"/>
-
     <copy todir="${build.path}/META-INF">
        <fileset dir="${project.path}/src/META-INF"/>
+       <fileset file="build.xml" />
     </copy>
+
+    <javac srcdir="${project.path}/src" destdir="${project.path}/classes" >
+        <classpath path="${idea.path}/lib/openapi.jar"/>
+        <classpath path="${idea.path}/lib/jdom.jar"/>
+        <classpath path="${idea.path}/lib/util.jar"/>
+    </javac>
 
     <copy todir="${build.path}/org">
        <fileset dir="${project.path}/classes/org"/>
+    </copy>
+
+    <copy todir="${build.path}/src">
+       <fileset dir="${project.path}/src"/>
     </copy>
 
     <jar jarfile="${build.path}/${plugname}.jar" basedir="${build.path}"
