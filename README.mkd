@@ -7,7 +7,7 @@ Here is the entry for this plugin in the Intellij IDEA plugin repository.
 NOTE:
 Works on Mac OSX - but only seems to handle gif files (png and jpg dont show the code on top of the image :( )
 
-See example here:  sample-screen.png
+Screenshot:
 ![Sample](https://github.com/kimptoc/Intellij-IDEA-Plugin-Background-Image/raw/master/sample-screen.png "Sample")
 
 TODO:
