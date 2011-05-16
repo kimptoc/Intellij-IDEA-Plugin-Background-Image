@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02267a82-9734-43f5-bffc-73e22adec53d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sample-screen.png" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README.mkd" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README" afterPath="$PROJECT_DIR$/README" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/src/META-INF/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.mkd" afterPath="$PROJECT_DIR$/README.mkd" />
     </list>
     <ignored path="Intellij-IDEA-Plugin-Background-Image.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -100,12 +99,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README">
+      <file leaf-file-name="README.mkd" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.mkd">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="36" selection-start="433" selection-end="433" vertical-scroll-proportion="0.22203948">
+            <state line="11" column="24" selection-start="548" selection-end="548" vertical-scroll-proportion="0.2713816">
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sample-screen.png" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sample-screen.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -137,6 +143,7 @@
         <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/src/META-INF/plugin.xml" />
         <option value="$PROJECT_DIR$/README" />
+        <option value="$PROJECT_DIR$/README.mkd" />
       </list>
     </option>
   </component>
@@ -569,9 +576,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README">
+    <entry file="file://$PROJECT_DIR$/sample-screen.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.mkd">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="36" selection-start="433" selection-end="433" vertical-scroll-proportion="0.22203948">
+        <state line="11" column="24" selection-start="548" selection-end="548" vertical-scroll-proportion="0.2713816">
           <folding />
         </state>
       </provider>
