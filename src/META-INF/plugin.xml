@@ -2,13 +2,13 @@
     <name>BackgroundImage</name>
 	<category>Editor</category>
     <description>Plugin that loads a background image into editors</description>
-    <version>0.10.0</version>
+    <version>0.10.1</version>
     <vendor email="chris@kimptoc.net" logo="/images/lil_nemo.png">Eric Sheffer/Charles DeCroes/Chris Kimpton</vendor>
-	<idea-version since-build="99.18" until-build="103.999"/>
+	<idea-version since-build="99.18" />
 	<depends>com.intellij.modules.lang</depends>
     <change-notes><![CDATA[
                 <ul>
-                 <li>Support for newer IDEA based IDEs, eg Rubymine
+                 <li>Support for IDEA 10.5 and above.
                 </ul>
                    ]]>
     </change-notes>
