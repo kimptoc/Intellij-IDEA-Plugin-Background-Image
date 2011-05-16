@@ -16,7 +16,7 @@ Screenshot
 
 TODO
 ----
-* handle png and jpg images
+* handle png and jpg images on OSX (works on Windows)
 * upon changing the image path/url, handle properly the restart (or remove requirement to restart)
 
 BACKGROUND
