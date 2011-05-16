@@ -10,6 +10,7 @@ Works on Mac OSX - but only seems to handle gif files (png and jpg dont show the
 TODO:
 - handle png and jpg images
 - upon changing the image path/url, handle properly the restart (or remove requirement to restart)
+- fix warnings when ant runs
 
 BACKGROUND:
 Info on making a plugin work with the whole family of IDEA editors:
