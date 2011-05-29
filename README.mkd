@@ -1,6 +1,6 @@
 BackgroundImage - plus for Jetbrains family of IDEs
 ===================================================
-This is a plugin for Intellij IDEA, it lets you change the background for your editor window to any of a random set of images that the user supplies.
+This is a plugin for Intellij IDEA, it lets you change the background for your editor window to any of a random set of images that the user supplies.  The trick to using several images is to edit the location text box to point at a directory instead of a specific image.  It will then pick a random image from that directory.
 
 Here is the entry for this plugin in the Intellij IDEA plugin repository.
 
