@@ -3,6 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="02267a82-9734-43f5-bffc-73e22adec53d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Intellij-IDEA-Plugin-Background-Image.iml" afterPath="$PROJECT_DIR$/Intellij-IDEA-Plugin-Background-Image.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/META-INF/plugin.xml" afterPath="$PROJECT_DIR$/src/META-INF/plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/BackgroundBorder.java" afterPath="$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/BackgroundBorder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/BackgroundImageConfiguration.java" afterPath="$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/BackgroundImageConfiguration.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/BackgroundImageConfigurationPanel.java" afterPath="$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/BackgroundImageConfigurationPanel.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/BackgroundImagePlugin.java" afterPath="$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/BackgroundImagePlugin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/BackgroundImageVisibleAreaListener.java" afterPath="$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/BackgroundImageVisibleAreaListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/EditorBackgroundListener.java" afterPath="$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/EditorBackgroundListener.java" />
     </list>
     <ignored path="Intellij-IDEA-Plugin-Background-Image.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -61,10 +69,131 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="BackgroundImageConfiguration.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/BackgroundImageConfiguration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="13" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utils.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/filechooser/Utils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="13" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BackgroundImageConfigurationPanel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/BackgroundImageConfigurationPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="13" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BackgroundImageVisibleAreaListener.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/BackgroundImageVisibleAreaListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="13" selection-start="317" selection-end="317" vertical-scroll-proportion="0.1330377">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BackgroundImagePlugin.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/BackgroundImagePlugin.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="97" column="30" selection-start="3521" selection-end="3521" vertical-scroll-proportion="-0.08928572">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="EditorBackgroundListener.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/EditorBackgroundListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="13" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0">
+            <state line="25" column="28" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JAVA/org.intellij.plugins.backgroundimage.EditorBackgroundListener" pinned="false" current="false" current-in-tab="false">
+        <entry file="uml://JAVA/org.intellij.plugins.backgroundimage.EditorBackgroundListener">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>org.intellij.plugins.backgroundimage.EditorBackgroundListener</OriginalElement>
+              <nodes>
+                <node x="340.0" y="185.0">org.intellij.plugins.backgroundimage.BackgroundImagePlugin</node>
+                <node x="895.5" y="265.0">org.intellij.plugins.backgroundimage.BackgroundImageVisibleAreaListener</node>
+                <node x="1001.0" y="105.0">java.lang.Object</node>
+                <node x="-23.5" y="105.0">org.intellij.plugins.backgroundimage.BackgroundImageConfigurationPanel</node>
+                <node x="1120.0" y="105.0">org.intellij.plugins.backgroundimage.BackgroundBorder</node>
+                <node x="615.0" y="185.0">org.intellij.plugins.backgroundimage.EditorBackgroundListener</node>
+                <node x="976.5" y="385.0">java.util.EventListener</node>
+                <node x="631.0" y="385.0">com.intellij.openapi.editor.event.EditorFactoryListener</node>
+                <node x="915.0" y="-15.0">org.intellij.plugins.backgroundimage.BackgroundImageConfiguration</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="org.intellij.plugins.backgroundimage.BackgroundImageVisibleAreaListener" target="java.lang.Object">
+                  <point x="0.0" y="-15.0" />
+                  <point x="0.0" y="15.0" />
+                </edge>
+                <edge source="org.intellij.plugins.backgroundimage.EditorBackgroundListener" target="java.lang.Object">
+                  <point x="105.0" y="0.0" />
+                  <point x="1010.0" y="200.0" />
+                  <point x="-30.0" y="15.0" />
+                </edge>
+                <edge source="org.intellij.plugins.backgroundimage.BackgroundImageConfiguration" target="java.lang.Object">
+                  <point x="0.0" y="15.0" />
+                  <point x="0.0" y="-15.0" />
+                </edge>
+                <edge source="org.intellij.plugins.backgroundimage.BackgroundBorder" target="java.lang.Object">
+                  <point x="-80.0" y="0.0" />
+                  <point x="39.0" y="0.0" />
+                </edge>
+                <edge source="com.intellij.openapi.editor.event.EditorFactoryListener" target="java.util.EventListener">
+                  <point x="89.0" y="0.0" />
+                  <point x="-63.5" y="0.0" />
+                </edge>
+                <edge source="org.intellij.plugins.backgroundimage.BackgroundImagePlugin" target="java.lang.Object">
+                  <point x="0.0" y="-15.0" />
+                  <point x="440.0" y="130.0" />
+                  <point x="-39.0" y="10.0" />
+                </edge>
+                <edge source="org.intellij.plugins.backgroundimage.BackgroundImageVisibleAreaListener" target="java.util.EventListener">
+                  <point x="0.0" y="15.0" />
+                  <point x="0.0" y="-15.0" />
+                </edge>
+                <edge source="org.intellij.plugins.backgroundimage.BackgroundImageConfigurationPanel" target="java.lang.Object">
+                  <point x="143.5" y="0.0" />
+                  <point x="-39.0" y="0.0" />
+                </edge>
+                <edge source="org.intellij.plugins.backgroundimage.EditorBackgroundListener" target="com.intellij.openapi.editor.event.EditorFactoryListener">
+                  <point x="0.0" y="15.0" />
+                  <point x="0.0" y="-15.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.6676737160120846" x="315.45701357466066" y="271.45701357466066" />
+              <SelectedNodes />
+              <Categories />
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -73,51 +202,30 @@
       <file leaf-file-name="BackgroundBorder.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/BackgroundBorder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="21" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
+            <state line="69" column="25" selection-start="2234" selection-end="2234" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="38" selection-start="703" selection-end="703" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plugin.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/META-INF/plugin.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="53" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.mkd" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.mkd">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="21" selection-start="414" selection-end="414" vertical-scroll-proportion="0.24671052">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sample-screen.png" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample-screen.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
-              <folding />
+      <file leaf-file-name="JAVA/javax.swing.border.Border" pinned="false" current="false" current-in-tab="false">
+        <entry file="uml://JAVA/javax.swing.border.Border">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>javax.swing.border.Border</OriginalElement>
+              <nodes>
+                <node x="0.0" y="0.0">javax.swing.border.Border</node>
+              </nodes>
+              <notes />
+              <edges />
+              <settings layout="Hierarchic Group" zoom="1.0" x="-162.5" y="35.5" />
+              <SelectedNodes>
+                <node>javax.swing.border.Border</node>
+              </SelectedNodes>
+              <Categories />
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
@@ -136,12 +244,14 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/EditorBackgroundListener.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/build.xml" />
-        <option value="$PROJECT_DIR$/src/META-INF/plugin.xml" />
         <option value="$PROJECT_DIR$/README" />
         <option value="$PROJECT_DIR$/README.mkd" />
+        <option value="$PROJECT_DIR$/src/META-INF/plugin.xml" />
+        <option value="$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/BackgroundBorder.java" />
+        <option value="$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/EditorBackgroundListener.java" />
+        <option value="$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/BackgroundImagePlugin.java" />
       </list>
     </option>
   </component>
@@ -178,58 +288,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Intellij-IDEA-Plugin-Background-Image" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Intellij-IDEA-Plugin-Background-Image" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Intellij-IDEA-Plugin-Background-Image" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Intellij-IDEA-Plugin-Background-Image" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Intellij-IDEA-Plugin-Background-Image" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Intellij-IDEA-Plugin-Background-Image" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Intellij-IDEA-Plugin-Background-Image" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="META-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -302,6 +360,99 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Intellij-IDEA-Plugin-Background-Image" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Intellij-IDEA-Plugin-Background-Image" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Intellij-IDEA-Plugin-Background-Image" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Intellij-IDEA-Plugin-Background-Image" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Intellij-IDEA-Plugin-Background-Image" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backgroundimage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Intellij-IDEA-Plugin-Background-Image" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Intellij-IDEA-Plugin-Background-Image" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backgroundimage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="filechooser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Intellij-IDEA-Plugin-Background-Image" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Intellij-IDEA-Plugin-Background-Image" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Intellij-IDEA-Plugin-Background-Image" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Intellij-IDEA-Plugin-Background-Image" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Favorites" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -316,7 +467,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -346,7 +496,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
-    <property name="options.lastSelected" value="preferences.pluginManager" />
+    <property name="options.lastSelected" value="org.intellij.plugins.backgroundimage.BackgroundImagePlugin" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="options.searchVisible" value="true" />
@@ -463,23 +613,23 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Phing Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4715262" sideWeight="0.55846155" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4715262" sideWeight="0.82" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3276923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35692307" sideWeight="0.9989407" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3272589" sideWeight="0.67230767" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3272589" sideWeight="0.30769232" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3272589" sideWeight="0.31538463" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3272589" sideWeight="0.6430769" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="100" y="122" width="1166" height="542" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44153845" sideWeight="0.9989407" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -543,44 +693,177 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar:///System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar!/sun/awt/image/ImageFetcher.class">
+    <entry file="file://$PROJECT_DIR$/build/src/org/intellij/plugins/backgroundimage/EditorBackgroundListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="6" selection-start="144" selection-end="144" vertical-scroll-proportion="0.096618354" />
+        <state line="20" column="20" selection-start="602" selection-end="602" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/EditorBackgroundListener.java">
+    <entry file="file://$PROJECT_DIR$/build/src/org/intellij/plugins/backgroundimage/BackgroundImageConfigurationPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="13" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/BackgroundBorder.java">
+    <entry file="file://$PROJECT_DIR$/build/src/org/intellij/plugins/backgroundimage/BackgroundImageConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="21" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="38" selection-start="703" selection-end="703" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/META-INF/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="53" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample-screen.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" />
+        <state line="47" column="18" selection-start="1194" selection-end="1194" vertical-scroll-proportion="0.4117647" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.mkd">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="21" selection-start="414" selection-end="414" vertical-scroll-proportion="0.24671052" />
+        <state line="10" column="21" selection-start="590" selection-end="590" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/filechooser/ImageFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="13" selection-start="137" selection-end="137" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/filechooser/ImagePreview.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="13" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/filechooser/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="173" selection-end="173" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/javax.swing.border.Border">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>javax.swing.border.Border</OriginalElement>
+          <nodes>
+            <node x="0.0" y="0.0">javax.swing.border.Border</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="-162.5" y="35.5" />
+          <SelectedNodes>
+            <node>javax.swing.border.Border</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/BackgroundImageConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/BackgroundImageConfigurationPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="13" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/BackgroundImageVisibleAreaListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="13" selection-start="317" selection-end="317" vertical-scroll-proportion="0.1330377">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/org.intellij.plugins.backgroundimage.EditorBackgroundListener">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>org.intellij.plugins.backgroundimage.EditorBackgroundListener</OriginalElement>
+          <nodes>
+            <node x="340.0" y="185.0">org.intellij.plugins.backgroundimage.BackgroundImagePlugin</node>
+            <node x="895.5" y="265.0">org.intellij.plugins.backgroundimage.BackgroundImageVisibleAreaListener</node>
+            <node x="1001.0" y="105.0">java.lang.Object</node>
+            <node x="-23.5" y="105.0">org.intellij.plugins.backgroundimage.BackgroundImageConfigurationPanel</node>
+            <node x="1120.0" y="105.0">org.intellij.plugins.backgroundimage.BackgroundBorder</node>
+            <node x="615.0" y="185.0">org.intellij.plugins.backgroundimage.EditorBackgroundListener</node>
+            <node x="976.5" y="385.0">java.util.EventListener</node>
+            <node x="631.0" y="385.0">com.intellij.openapi.editor.event.EditorFactoryListener</node>
+            <node x="915.0" y="-15.0">org.intellij.plugins.backgroundimage.BackgroundImageConfiguration</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="org.intellij.plugins.backgroundimage.BackgroundImageVisibleAreaListener" target="java.lang.Object">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="org.intellij.plugins.backgroundimage.EditorBackgroundListener" target="java.lang.Object">
+              <point x="105.0" y="0.0" />
+              <point x="1010.0" y="200.0" />
+              <point x="-30.0" y="15.0" />
+            </edge>
+            <edge source="org.intellij.plugins.backgroundimage.BackgroundImageConfiguration" target="java.lang.Object">
+              <point x="0.0" y="15.0" />
+              <point x="0.0" y="-15.0" />
+            </edge>
+            <edge source="org.intellij.plugins.backgroundimage.BackgroundBorder" target="java.lang.Object">
+              <point x="-80.0" y="0.0" />
+              <point x="39.0" y="0.0" />
+            </edge>
+            <edge source="com.intellij.openapi.editor.event.EditorFactoryListener" target="java.util.EventListener">
+              <point x="89.0" y="0.0" />
+              <point x="-63.5" y="0.0" />
+            </edge>
+            <edge source="org.intellij.plugins.backgroundimage.BackgroundImagePlugin" target="java.lang.Object">
+              <point x="0.0" y="-15.0" />
+              <point x="440.0" y="130.0" />
+              <point x="-39.0" y="10.0" />
+            </edge>
+            <edge source="org.intellij.plugins.backgroundimage.BackgroundImageVisibleAreaListener" target="java.util.EventListener">
+              <point x="0.0" y="15.0" />
+              <point x="0.0" y="-15.0" />
+            </edge>
+            <edge source="org.intellij.plugins.backgroundimage.BackgroundImageConfigurationPanel" target="java.lang.Object">
+              <point x="143.5" y="0.0" />
+              <point x="-39.0" y="0.0" />
+            </edge>
+            <edge source="org.intellij.plugins.backgroundimage.EditorBackgroundListener" target="com.intellij.openapi.editor.event.EditorFactoryListener">
+              <point x="0.0" y="15.0" />
+              <point x="0.0" y="-15.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.6676737160120846" x="315.45701357466066" y="271.45701357466066" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/BackgroundBorder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="25" selection-start="2234" selection-end="2234" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/EditorBackgroundListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="28" selection-start="744" selection-end="744" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/intellij/plugins/backgroundimage/BackgroundImagePlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="30" selection-start="3521" selection-end="3521" vertical-scroll-proportion="-0.08928572">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

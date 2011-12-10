@@ -1,122 +1,130 @@
 package org.intellij.plugins.backgroundimage;
 
-
 import com.intellij.openapi.application.Application;
 import com.intellij.openapi.application.ApplicationManager;
 import com.intellij.openapi.components.ApplicationComponent;
 import com.intellij.openapi.editor.EditorFactory;
 import com.intellij.openapi.options.Configurable;
-import com.intellij.openapi.ui.Messages;
+import java.awt.Toolkit;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+import javax.swing.JComponent;
+import javax.swing.JSlider;
 
-import javax.swing.*;
-import java.awt.*;
+public class BackgroundImagePlugin
+  implements ApplicationComponent, Configurable
+{
+  private BackgroundImageConfiguration theConfiguration;
+  private BackgroundImageConfigurationPanel userInterface;
+  private Icon icon = new ImageIcon(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/images/nemo.jpg")));
+  private EditorBackgroundListener backgroundListener;
 
-/**
- * <h3>BackgroundImagePlugin</h3>
- */
-public class BackgroundImagePlugin implements ApplicationComponent, Configurable {
+  public String getDisplayName()
+  {
+    return "Background Image";
+  }
 
-    private BackgroundImageConfiguration theConfiguration;
-    private BackgroundImageConfigurationPanel userInterface;
+  public String getHelpTopic()
+  {
+    return "plugins.BackgroundImagePlugin";
+  }
 
-    public BackgroundImagePlugin() {
-        super();
-        icon = new ImageIcon(Toolkit.getDefaultToolkit().getImage(getClass().getResource("/images/nemo.jpg")));
+  public void disposeUIResources()
+  {
+    this.userInterface = null;
+  }
+
+  public Icon getIcon()
+  {
+    return this.icon;
+  }
+
+  public JComponent createComponent()
+  {
+    if (this.userInterface == null)
+    {
+      this.userInterface = new BackgroundImageConfigurationPanel();
+      reset();
     }
+    return this.userInterface;
+  }
 
-    public String getDisplayName() {
-        return "Background Image";
+  public void initComponent()
+  {
+    Application localApplication = ApplicationManager.getApplication();
+    this.theConfiguration = ((BackgroundImageConfiguration)localApplication.getComponent(BackgroundImageConfiguration.class));
+    if (this.theConfiguration.filename.equalsIgnoreCase(""))
+    {
+      this.theConfiguration.filename = "http://i.imdb.com/Photos/Ss/0266543/Nemo102.jpg";
+      this.theConfiguration.localFile = false;
     }
+    this.backgroundListener = new EditorBackgroundListener(this.theConfiguration.filename, this.theConfiguration.localFile);
+    EditorFactory.getInstance().addEditorFactoryListener(this.backgroundListener);
+  }
 
-    public String getHelpTopic() {
-        return "plugins.BackgroundImagePlugin";
+  public boolean isModified()
+  {
+    int i = 0;
+    if ((this.userInterface != null) && (this.theConfiguration != null))
+      i = (!this.userInterface.getFilename().equals(this.theConfiguration.filename)) ||
+              (this.userInterface.isLocalFile() != this.theConfiguration.localFile) ||
+              (this.userInterface.getVisibility() != this.theConfiguration.getVisibility()) ||
+              (this.userInterface.isStretched() != this.theConfiguration.isStretched()) ||
+              (this.userInterface.isEnabled() != this.theConfiguration.enabled) ? 1 : 0;
+    return i == 1;
+  }
+
+  public void apply()
+  {
+    if ((this.userInterface != null) && (this.theConfiguration != null))
+    {
+      this.theConfiguration.filename = this.userInterface.getFilename();
+      this.theConfiguration.localFile = this.userInterface.isLocalFile();
+      this.theConfiguration.enabled = this.userInterface.isEnabled();
+      this.theConfiguration.setVisibility(this.userInterface.getVisibility());
     }
-
-    public void disposeUIResources() {
-        userInterface = null;
+    if (this.userInterface.getVisibility() != this.theConfiguration.getVisibility())
+    {
+      this.theConfiguration.setVisibility(this.userInterface.getVisibility());
+      BackgroundBorder.setImage();
     }
-
-    public Icon getIcon() {
-        return icon;
+    if (this.userInterface.getFilename().equals(this.theConfiguration.filename))
+    {
+      this.theConfiguration.filename = this.userInterface.getFilename();
+      BackgroundBorder.setImage();
     }
-
-    public JComponent createComponent() {
-        if (userInterface == null) {
-            userInterface = new BackgroundImageConfigurationPanel();
-            reset();
-        }
-
-        return userInterface;
+    if (this.userInterface.isStretched() != this.theConfiguration.isStretched())
+    {
+      this.theConfiguration.setStretched(this.userInterface.isStretched());
+      BackgroundBorder.setImage();
     }
+  }
 
-    public void initComponent() {
-        Application application = ApplicationManager.getApplication();
-        theConfiguration = (BackgroundImageConfiguration) application.getComponent(BackgroundImageConfiguration.class);
-
-        if (theConfiguration.filename.equalsIgnoreCase("")) {
-            theConfiguration.filename = "http://i.imdb.com/Photos/Ss/0266543/Nemo102.jpg";
-            theConfiguration.localFile = false;
-        }
-
-        backgroundListener = new EditorBackgroundListener(theConfiguration.filename, theConfiguration.localFile);
-
-        if (theConfiguration.enabled) {
-            EditorFactory.getInstance().addEditorFactoryListener(backgroundListener);
-        }
-        //visibleAreaChangedListener = new BackgroundImageVisibleAreaListener();
-        //EditorFactory.getInstance().getEventMulticaster().addVisibleAreaListener(visibleAreaChangedListener);
-
+  public void reset()
+  {
+    if ((this.userInterface != null) && (this.theConfiguration != null))
+    {
+      this.userInterface.setFilename(this.theConfiguration.filename);
+      this.userInterface.setStretched(this.theConfiguration.isStretched());
+      this.userInterface.setLocalFile(this.theConfiguration.localFile);
+      this.userInterface.setEnabled(this.theConfiguration.enabled);
+      this.userInterface.getVisSlider().setValue((int)(this.theConfiguration.getVisibility() * 100.0D));
     }
+  }
 
-    public boolean isModified() {
-        boolean flag = false;
-        if (userInterface != null && theConfiguration != null) {
-            flag = !userInterface.getFilename().equals(theConfiguration.filename) ||
-                    userInterface.isLocalFile() != theConfiguration.localFile ||
-                    userInterface.isEnabled() != theConfiguration.enabled;
-        }
-        return flag;
-    }
+  public void disposeComponent()
+  {
+    if (this.theConfiguration.enabled)
+      EditorFactory.getInstance().removeEditorFactoryListener(this.backgroundListener);
+  }
 
-    public void apply() {
-        if (userInterface != null && theConfiguration != null) {
-            theConfiguration.filename = userInterface.getFilename();
-            theConfiguration.localFile = userInterface.isLocalFile();
-            theConfiguration.enabled = userInterface.isEnabled();
-        }
-
-        if (0 == Messages.showYesNoDialog(DIALOG_MSG, "Warning!", null)) {
-            ApplicationManager.getApplication().exit();
-        }
-    }
-
-    public void reset() {
-        if (userInterface != null && theConfiguration != null) {
-            userInterface.setFilename(theConfiguration.filename);
-            userInterface.setLocalFile(theConfiguration.localFile);
-            userInterface.setEnabled(theConfiguration.enabled);
-        }
-    }
-
-    /**
-     * This method is called on plugin disposal.
-     */
-    public void disposeComponent() {
-        if (theConfiguration.enabled) {
-            EditorFactory.getInstance().removeEditorFactoryListener(backgroundListener);
-            //EditorFactory.getInstance().getEventMulticaster().removeVisibleAreaListener(visibleAreaChangedListener);
-        }
-    }
-
-    public String getComponentName() {
-        return "BackgroundImagePlugin";
-    }
-
-    private Icon icon;
-    private EditorBackgroundListener backgroundListener;
-    //private VisibleAreaListener visibleAreaChangedListener;
-
-    private static String DIALOG_MSG =
-            "IDEA must be restarted for changes to take" +
-            "\neffect. Would you like to shutdown IDEA?\n";
+  public String getComponentName()
+  {
+    return "BackgroundImagePlugin";
+  }
 }
+
+/* Location:           C:\Projects\1\
+ * Qualified Name:     org.intellij.plugins.backgroundimage.BackgroundImagePlugin
+ * JD-Core Version:    0.6.0
+ */

@@ -1,81 +1,102 @@
 package org.intellij.plugins.backgroundimage;
 
-import com.intellij.openapi.editor.event.EditorFactoryListener;
-import com.intellij.openapi.editor.event.EditorFactoryEvent;
 import com.intellij.openapi.editor.Editor;
+import com.intellij.openapi.editor.event.EditorFactoryEvent;
+import com.intellij.openapi.editor.event.EditorFactoryListener;
 import com.intellij.openapi.ui.Messages;
 
-import javax.swing.border.Border;
-import javax.imageio.ImageIO;
-import java.net.URL;
+import java.awt.*;
+import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.IOException;
 import java.io.FileFilter;
-import java.util.*;
-import java.awt.Toolkit;
+import java.io.IOException;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.List;
+import javax.imageio.ImageIO;
+import javax.swing.JComponent;
+import javax.swing.JViewport;
+import javax.swing.border.Border;
 
-/**
- * EditorBackgroundListener - listens for new editors opening and adds a background image
- */
-public class EditorBackgroundListener implements EditorFactoryListener {
+public class EditorBackgroundListener
+  implements EditorFactoryListener
+{
+  private Border background;
+  private String url;
+  private boolean isLocalFile;
 
-    public EditorBackgroundListener(String s, boolean b) {
-        this.url = s;
-        this.isLocalFile = b;
-
-        try {
-            if (isLocalFile) {
-                background = getFileBackgroundBorder();
-            } else {
-                background = new BackgroundBorder(ImageIO.read(new URL(url)));
-            }
-        } catch (Exception e) {
-            Messages.showErrorDialog(e.toString(), "Error loading background image");
-        }
+  public EditorBackgroundListener(String paramString, boolean paramBoolean)
+  {
+    this.url = paramString;
+    this.isLocalFile = paramBoolean;
+    try
+    {
+      if (this.isLocalFile)
+        this.background = getFileBackgroundBorder();
+      else
+        this.background = new BackgroundBorder(ImageIO.read(new URL(this.url)));
     }
-
-    public void editorReleased(EditorFactoryEvent event) {
-        event.getEditor().getContentComponent().setBorder(null);
+    catch (Exception localException)
+    {
+      Messages.showErrorDialog(localException.toString(), "Error loading background image");
     }
+  }
 
-    public void editorCreated(EditorFactoryEvent event) {
+  public void editorReleased(EditorFactoryEvent paramEditorFactoryEvent)
+  {
+    paramEditorFactoryEvent.getEditor().getContentComponent().setBorder(null);
+  }
 
-        Editor editor = event.getEditor();
-
-        try {
-            editor.getContentComponent().setBorder(getBackground());
-        } catch (Exception e) {
-            Messages.showErrorDialog(e.toString(), "Error setting background image.");
-        }
+  public void editorCreated(EditorFactoryEvent paramEditorFactoryEvent)
+  {
+    Editor localEditor = paramEditorFactoryEvent.getEditor();
+    try
+    {
+      localEditor.getContentComponent().setBorder(getBackground());
+      JViewport localJViewport = (JViewport)localEditor.getContentComponent().getParent();
+      localJViewport.setScrollMode(0);
     }
-
-    private Border getBackground() {
-        if (null == background) {
-            try {
-                if (isLocalFile) {
-                    background = getFileBackgroundBorder();
-                } else {
-                    background = new BackgroundBorder(ImageIO.read(new URL(url)));
-                }
-            } catch (Exception e) {
-                Messages.showErrorDialog(e.toString(), "Error loading background image");
-            }
-        }
-        return background;
+    catch (Exception localException)
+    {
+      Messages.showErrorDialog(localException.toString(), "Error setting background image.");
     }
+  }
+
+  private Border getBackground()
+  {
+    if (null == this.background)
+      try
+      {
+        if (this.isLocalFile)
+          this.background = getFileBackgroundBorder();
+        else
+          this.background = new BackgroundBorder(ImageIO.read(new URL(this.url)));
+      }
+      catch (Exception localException)
+      {
+        Messages.showErrorDialog(localException.toString(), "Error loading background image");
+      }
+    return this.background;
+  }
 
     private BackgroundBorder getFileBackgroundBorder() throws IOException {
-        File file = new File(url);
-        if (file.isFile())
-        {
-            return new BackgroundBorder(ImageIO.read(file));
-        }
+        File file = getFile();
 
-        // its a directory, so pick a random file...
-        List allFiles = getAllFilesIncludingSubdirectories(file);
-        File selectedFile = (File) allFiles.get((int) (Math.random()*allFiles.size()));
-//        return new BackgroundBorder(ImageIO.read(selectedFile));
-        return new BackgroundBorder(Toolkit.getDefaultToolkit().getImage(selectedFile.getAbsolutePath()));
+        return new BackgroundBorder(ImageIO.read(file));
+    }
+
+    private File getFile() {
+        File file = new File(url);
+        if (!file.isFile())
+        {
+            // its a directory, so pick a random file...
+            List allFiles = getAllFilesIncludingSubdirectories(file);
+            file = (File) allFiles.get((int) (Math.random()*allFiles.size()));
+    //        return new BackgroundBorder(ImageIO.read(selectedFile));
+        }
+        return file;
     }
 
     private List getAllFilesIncludingSubdirectories(File file) {
@@ -118,10 +139,11 @@ public class EditorBackgroundListener implements EditorFactoryListener {
         return Arrays.asList(files);
     }
 
-    private Border background;
-    private String url;
-    private boolean isLocalFile;
-    /*private Border background = null;
-    private String url = "http://i.imdb.com/Photos/Ss/0266543/Nemo102.jpg";
-    private boolean isLocalFile = true;*/
+
+
 }
+
+/* Location:           C:\Projects\1\
+ * Qualified Name:     org.intellij.plugins.backgroundimage.EditorBackgroundListener
+ * JD-Core Version:    0.6.0
+ */
